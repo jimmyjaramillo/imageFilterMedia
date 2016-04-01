@@ -6,7 +6,7 @@
      filter images for geolocation and DateTime
    </description>
    <js-module name="imageFilterMedia" src="www/imageFilterMedia.js">
-     <clobbers target="cordova.plugins.imageFilterMedia" />
+     <clobbers target="imageFilterMedia" />
    </js-module>
    <platform name="android">
    <config-file parent="/*" target="res/xml/config.xml">

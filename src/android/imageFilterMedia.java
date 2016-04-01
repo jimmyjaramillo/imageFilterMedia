@@ -25,6 +25,8 @@ import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 /**
  * This class echoes a string called from JavaScript.
@@ -222,7 +224,7 @@ public class imageFilterMedia extends CordovaPlugin {
       String[] directories = null;
       if (u != null)
       {
-        c = managedQuery(u, projection, null, null, null);
+        c = this.cordova.getActivity().getContentResolver().query(u, projection, null, null, null);
       }
       if ((c != null) && (c.moveToFirst()))
       {

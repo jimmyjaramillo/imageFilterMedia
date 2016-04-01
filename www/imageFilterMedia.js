@@ -1,6 +1,6 @@
 var exec = require('cordova/exec');
 
-exports.getImageByGeoDate = function(arg0, success, error) {
+exports.getImageByGeoDate = function(args, success, error) {
   var params = {
     Radius: args.radius ? args.radius: null,
     Latitude: args.latitude ? args.latitude: null,
