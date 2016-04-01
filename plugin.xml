@@ -1,2 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="imageFilterMedia" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"><name>imageFilterMedia</name><description>Cool plugin description</description><js-module name="imageFilterMedia" src="www/imageFilterMedia.js"><clobbers target="cordova.plugins.imageFilterMedia" /></js-module><platform name="android"><config-file parent="/*" target="res/xml/config.xml"><feature name="imageFilterMedia"><param name="android-package" value="imageFilterMedia.imageFilterMedia" /></feature></config-file><config-file parent="/*" target="AndroidManifest.xml" /><source-file src="src/android/imageFilterMedia.java" target-dir="src/imageFilterMedia/imageFilterMedia" /></platform><platform name="ios"><config-file parent="/*" target="config.xml"><feature name="imageFilterMedia"><param name="ios-package" value="imageFilterMedia" /></feature></config-file><source-file src="src/ios/CDVimageFilterMedia.m" /></platform></plugin>
+<plugin id="imageFilterMedia"
+   version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+   <name>imageFilterMedia</name>
+   <description>
+     filter images for geolocation and DateTime
+   </description>
+   <js-module name="imageFilterMedia" src="www/imageFilterMedia.js">
+     <clobbers target="cordova.plugins.imageFilterMedia" />
+   </js-module>
+   <platform name="android">
+   <config-file parent="/*" target="res/xml/config.xml">
+     <feature name="imageFilterMedia">
+       <param name="android-package" value="imageFilterMedia.imageFilterMedia" />
+     </feature>
+   </config-file>
+     <config-file parent="/*" target="AndroidManifest.xml" />
+     <source-file src="src/android/imageFilterMedia.java" target-dir="src/imageFilterMedia/imageFilterMedia" />
+   </platform>
+   <platform name="ios">
+     <config-file parent="/*" target="config.xml">
+       <feature name="imageFilterMedia">
+         <param name="ios-package" value="imageFilterMedia" />
+       </feature></config-file>
+       <source-file src="src/ios/CDVimageFilterMedia.m" />
+     </platform>
+   </plugin>
