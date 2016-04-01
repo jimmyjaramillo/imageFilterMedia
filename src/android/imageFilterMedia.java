@@ -197,14 +197,23 @@ public class imageFilterMedia extends CordovaPlugin {
       if (file.isDirectory()) {
           String directoryAux[] = file.getName().split("/");
     			String nombre = directoryAux[directoryAux.length - 1];
-    			if (nombre.equals("100ANDRO")) {
-              return 1;
+          if (nombre.equals("Facebook")) {
+            return 0;
           }
-    			if (nombre.equals("Camera")){
-    				  return 1;
-    			}
+          if (nombre.equals("Instagram")){
+            return 0;
+          }
+          if (nombre.equals("Snapchat")){
+            return 0;
+          }
+          if (nombre.equals("WhatsApp Images")){
+            return 0;
+          }
+          if (nombre.equals("WhatsApp Profile Photos")){
+            return 0;
+          }
   		}
-  		return 0;
+  		return 1;
   	}
 
     private static Integer validateImage (File file) {
